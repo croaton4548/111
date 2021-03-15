@@ -6,5 +6,8 @@ namespace UP_01
 {
     class Izdelie
     {
+        private string name;
+        private string shifr;
+        private int count;
     }
 }
