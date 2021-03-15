@@ -9,5 +9,41 @@ namespace UP_01
         private string name;
         private string shifr;
         private int count;
+
+        public string GetName
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                this.name = GetName;
+            }
+        }
+
+        public string GetShifr
+        {
+            get
+            {
+                return shifr;
+            }
+            set
+            {
+                this.shifr = GetShifr;
+            }
+        }
+
+        public int GetCount
+        {
+            get
+            {
+                return count;
+            }
+            set
+            {
+                this.count = GetCount;
+            }
+        }
     }
 }
