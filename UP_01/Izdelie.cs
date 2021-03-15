@@ -45,5 +45,36 @@ namespace UP_01
                 this.count = GetCount;
             }
         }
+
+        public Izdelie(string name, string shifr, int count)
+        {
+            this.name = name;
+            this.shifr = shifr;
+            this.count = count;
+        }
+
+        public Izdelie()
+        {
+            name = "";
+            shifr = "";
+            count = 0;
+        }
+
+        public void SetInfo()
+        {
+            Console.Write("Название: ");
+            this.name = Console.ReadLine();
+            Console.Write("Шифр: ");
+            this.shifr = Console.ReadLine();
+            Console.Write("Количество: ");
+            this.count = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public void GetInfo()
+        {
+            Console.WriteLine("Название: " + name);
+            Console.WriteLine("Шифр: " + shifr);
+            Console.WriteLine("Количество: " + count);
+        }
     }
 }
